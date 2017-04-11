@@ -1,5 +1,36 @@
+body {
+  background: url(../img/qiao.jpg);
+}
+
 p {
   color: blue;
-  font-size: 1px;
+  font-size: 50px;
   margin: 10px 0;
+}
+
+/*h1 {
+  padding-left: 40px;
+  background: url(../img/curcle.png) no-repeat left center;
+  background-size: 50px;
+}*/
+#test1 {
+  padding-left: 60px;
+  background: url(../img/curcle.png) no-repeat left center;
+  background-size: 40px;
+}
+#test2 {
+  padding-left: 60px;
+  background: url(../img/curcle.png) no-repeat 0px 0px;
+  background-size: 40px;
+}
+#test3 {
+  padding-left: 60px;
+  background: url(../img/curcle.png) no-repeat 0 20%;
+  background-size: 40px;
+}
+#branding {
+  width: 700px;
+  height: 200px;
+  background: url(../img/hehua.png) no-repeat;
+  background-size: 50px;
 }
