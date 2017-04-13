@@ -34,3 +34,64 @@ p {
   background: url(../img/hehua.png) no-repeat;
   background-size: 50px;
 }
+
+.box1 {
+  width: 280px;
+  background: #cc9933 url(../img/bottom.gif) no-repeat left bottom;
+}
+
+.box1 h2 {
+  background: url(../img/top.gif) no-repeat left top;
+  padding: 10px 20px 0 20px;
+}
+
+.box1 p {
+  padding:0 20px 10px 20px;
+  color:  #000000;
+  font-size: 20px;
+}
+
+.box2 {
+  width: 280px;
+  background: url(../img/middle-frame.gif) repeat-y;
+}
+.box2 h2 {
+  background: url(../img/top-frame.gif) no-repeat left top;
+  padding-top: 20px;
+}
+.box2 .last {
+  background: url(../img/bottom-frame.gif) no-repeat left bottom;
+  padding-bottom: 20px;
+  color: #000000;
+  font-size: 20px;
+}
+.box2 h2,.box2 p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box3 {
+  width: 20em;
+  background: url(../img/bottom-left.gif) no-repeat left bottom;
+  max-width: 820px;
+}
+.box-outer {
+  background: url(../img/bottom-right.gif) no-repeat right bottom;
+  padding-bottom: 5%;
+}
+ .box-inner {
+   background: url(../img/top-left.gif) no-repeat left top;
+ }
+
+ .box3 h2 {
+   background: url(../img/top-right.gif) no-repeat right top;
+   padding-top: 5%;
+}
+.box3 p + p {
+  color: #000000;
+  font-size: 20px;
+}
+.box3 h2,.box3 p {
+  padding-left: 5%;
+  padding-right: 5%;
+}

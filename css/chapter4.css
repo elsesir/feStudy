@@ -1,0 +1,103 @@
+
+a:link {
+  color: blue;
+}/*makes unvisited links blue*/
+a:visited {
+  color: red;
+}/*make visited links red*/
+a:link, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dotted #000;
+}
+a:hover, a:active {/*hover鼠标停留的；active被激活的*/
+  color: red;
+  /*text-decoration: underline;点击时显示下划线*/
+  border-bottom-style: solid;
+  cursor: pointer;/*cursor要显示光标的形状*/
+}
+
+.tp2 a:link,.tp2 a:visited {
+  color: #666;
+  text-decoration: none;/*去掉下划线*/
+  background: url(../img/bottom.gif) repeat-x left bottom;
+}
+.tp2 a:hover, .tp2 a:active {
+  background-image: url(../img/notao.jpg);
+  background-size: 10px;
+}
+
+.extenal {
+  background: url(../img/search.png) no-repeat right top;
+  padding-right: 10px;
+  background-size: 10px;
+}
+a[href^="http:"] {
+  background: url(../img/search.png) no-repeat right top;
+  padding-right: 10px;
+  background-size: 10px;
+}/*利用属性选择器选择http开头的链接*/
+a[href$=".md"] {
+  background: url(../img/price_tag.png) no-repeat right top;
+  padding-right: 15px;
+  background-size: 10px;
+}
+.tp4 a {
+  display: block;
+  width: 12em;
+  padding: 0.2em;
+  line-height: 1.4;
+  background-color: #ff6600;
+  border:1px solid black;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+.tp4 a:hover {
+  background-color: #369;
+  color: #fff;
+}
+.tp4 .imgchange {
+  display: block;/*可省略*/
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;/*可省略*/
+  background: url(../img/bt1.jpg) no-repeat left top;
+  background-size: 220px;
+  text-decoration: none;
+  text-indent: 20px;
+}
+.tp4 .imgchange:hover {
+  background-image: url(../img/bt2.jpg);
+  color: #000;
+}
+.tp4 .imgpixy {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/bt2.jpg) no-repeat left top;
+  background-size: 220px;
+  text-indent: 20px;
+}
+.tp4 .imgpixy:hover {
+  background-position: right bottom;
+  color: #000;
+}
+a.tooltip {
+  position: relative;
+}
+a.tooltip span {
+  display: none;
+}
+a.tooltip:hover span {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  padding: 0.2em 0.6em;
+  border: 1px solid #ffccff;
+  background-color: #ffff66;
+  font-size: 10px;
+  color: #000;
+}
