@@ -8,6 +8,7 @@ ul {
   padding-left: 25px;
   background-size: 15px;
 }
+
 #mainNav a {
   display: block;
   width: 200px;
@@ -33,6 +34,7 @@ ul {
   color: #fff;
   cursor: default;
 }
+
 .ls3 {
   margin: 0;
   padding: 0;
@@ -56,4 +58,25 @@ ul {
 }
 .ls3 a:hover {
   color: #333;
+}
+.ls4 {
+  width: 800px;
+  float: left;
+}
+.ls4 li {
+  float: left;
+  list-style-type: none;
+  background: url(../img/tab-right.gif) no-repeat top right;
+}
+.ls4 li a {
+  display: block;
+  float: left;
+  padding: 0 2em;
+  line-height: 2.5em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../img/tab-left.gif) no-repeat top left;
+}
+.ls4 li a:hover {
+  color: #000;
 }
