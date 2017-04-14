@@ -13,7 +13,8 @@ ul {
   width: 100px;
   height: 100px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  font-size: 20px;
   border: 1px solid transparent;
 }
 #pic a .hotpot {
@@ -33,6 +34,10 @@ ul {
 #pic .yingcao a{
   top: 75px;
   left: 145px;
+}
+#pic .yingcao a .hotpot {
+  top:-1px;
+  left: -1px;
 }
 #pic .shenyue a .hotpot {
   top:-1px;
@@ -87,6 +92,10 @@ ul {
 }
 #pic .shenyue a .note {
   bottom:-3.2em;
+  left: 0;
+}
+#pic .yingcao a .note {
+  bottom: -2em;
   left: 0;
 }
 #pic a:hover .note {

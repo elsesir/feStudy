@@ -1,0 +1,72 @@
+table {
+  border-collapse: collapse;;
+  width: 50em;
+  border: 1px solid #666;
+}
+th, td {
+  padding: 0.1em 1em;
+}
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+col {
+  border-right: 1px solid #ccc;
+}
+col#albumCol {
+  border: none;
+}
+thead {
+  background: #ccc url(../img/pixy-rollover3.jpg) repeat-x top left;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+}
+#playlistHead {
+  text-indent: -1000em;
+}
+.odd {
+  background-color: #edf5ff;
+}/*单数行为蓝色，设为同一个类名*/
+/*tr:nth-child(odd) {
+  background-color: #edf5ff;
+}*//*css3选择器 ：tr:nth-childe()*/
+tr:hover {
+  background-color: #3d80df;
+  color: #fff;
+}
+thead tr:hover {
+  background-color: transparent;
+  color: inherit;
+}
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border:1px solid #CCC;
+  background: #f8f8f8;
+}
+
+legend {
+  font-weight: bold;
+}
+label {
+  display: block;
+}
+input {
+  width: 200px;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+}
+input .radio, input .chectbox, input .submit {
+  width: auto;
+}
+input .radio {
+  float: left;
+  margin-right: 1em;
+}

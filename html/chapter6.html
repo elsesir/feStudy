@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>第六章 对表单和数据表格应用样式</title>
+    <link rel="stylesheet" href="../css/chapter6.css">
+  </head>
+  <body>
+    <h1>1 对数据表格应用样式</h1>
+    <table cellspacing="o" id="playlistTable" summary="Top 15 songs played.Top artisl include Coldplay,
+    Yeah Yeah Yeahs, Snow Patrol, Ddeeper Water, Kings of Leon, Embrace, Oasis, Franz Ferdinand,
+    Jet, The Bees, Blue States, Kaiser Cheif and Athlete.">
+      <caption>Top 15 Playlist</caption>
+      <colgroup>
+        <col id="PlaylistCol" />
+        <col id="trackCol" />
+        <col id="artistCol" />
+        <col id="albumCol" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th id="playlishtPosHead" scope="col">Playlist Posotion</th>
+          <th scope="col">Track Name</th>
+          <th scope="col">Artist</th>
+          <th scopr="col">Album</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td>1</td>
+          <td>Hide You</td>
+          <td>Kosheen</td>
+          <td>Resist</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>.38.45</td>
+          <td>Thievery Corporation</td>
+          <td>Sounds From the Thievery Hi-Fi</td>
+        </tr>
+        <tr class="odd">
+          <td>3</td>
+          <td>Fix You</td>
+          <td>Cold Play</td>
+          <td>X&amp;Y</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>2 简单的表单布局</h1>
+    <fieldset>
+      <legend>You Contact Details</legend>
+      <p>
+        <label for="author">Name:</label>
+        <input name="author" id="author" type="text" />
+      </p>
+      <p>
+        <label for="email">Email Address:</label>
+        <input name="email" id="email" type="text" />
+      </p>
+      <p>
+        <label for="url">Web Address:</label>
+        <input name="url" id="url" type="text" />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Comments</legend>
+      <p>
+        <label for="text">Message</label>
+        <textarea name="text" id="text" cols="20" rows="10"></textarea>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Remember Me</legend>
+      <p>
+        <input id="remember-yes" class="radio" name="remember" type="radio"
+        value="yes"/>
+        <label for="remember-yes">Yes</label>
+      </p>
+      <p>
+        <input id="remember-no" class="radio" name="remember" type="radio"
+        value="no" checked="checked"/>
+        <label for="remember-no">No</label>
+      </p>
+    </fieldset>
+  </body>
+</html>
