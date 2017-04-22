@@ -49,12 +49,26 @@ fieldset {
   border:1px solid #CCC;
   background: #f8f8f8;
 }
-
+form p {
+  position: relative;
+}
+.feedback {
+  position: absolute;
+  margin-left: 11em;
+  left: 240px;
+  right: 0;
+  font-weight: bold;
+  color: #760000;
+  padding-left: 20px;
+  background: url(../img/warning.png) no-repeat left top;
+  background-size: 15px;
+}
 legend {
   font-weight: bold;
 }
 label {
-  display: block;
+  float: left;
+  width: 10em;
 }
 input {
   width: 200px;
@@ -69,4 +83,66 @@ input .radio, input .chectbox, input .submit {
 input .radio {
   float: left;
   margin-right: 1em;
+}
+input:focus, textarea:focus {
+  background: #ffc;
+}
+input[type="text"], textarea {
+  border-top: 2px solid #999;
+  border-left: 2px solid #999;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.required {
+  font-size: 1em;
+  color: #780000;
+}
+#remember-me label {
+  width: 4em;
+}
+#remember-me input {
+  float: left;
+}
+#monthOfBirthLabel,#yearOfBirthLabel {
+  text-indent: -10000em;
+  width: 0;
+}
+input#dateOfBirth {
+  width: 3em;
+  margin-right: 0.5em;
+}
+select#monthOfBirth {
+  width: 10em;
+  margin-right: 0.5em;
+}
+input#yearOfBirth {
+  width:5em;
+}
+fieldset#favoriteColor {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+#favoriteColor h2 {
+  width: 10em;
+  float: left;
+  font-size: 1em;
+  font-weight: normal;
+}
+#favoriteColor div {
+  width: 8em;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+#favoriteColor label {
+  width: 3em;
+  float: none;
+  display: inline;
+}
+#favoriteColor p {
+  margin: 0.3em 0;
 }

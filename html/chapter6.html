@@ -1,7 +1,8 @@
 <html>
   <head>
-    <title>第六章 对表单和数据表格应用样式</title>
-    <link rel="stylesheet" href="../css/chapter6.css">
+    <title>第六章对表单和数据表格应用样式</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/chapter6.css" >
   </head>
   <body>
     <h1>1 对数据表格应用样式</h1>
@@ -48,11 +49,13 @@
     <fieldset>
       <legend>You Contact Details</legend>
       <p>
-        <label for="author">Name:</label>
+        <label for="author">Name:<em class="required">(*)</em></label>
         <input name="author" id="author" type="text" />
       </p>
       <p>
-        <label for="email">Email Address:</label>
+        <label for="email">Email Address:
+        <span class="feedback">Incorrect email address. Please try again.</span>
+      </label>
         <input name="email" id="email" type="text" />
       </p>
       <p>
@@ -67,7 +70,7 @@
         <textarea name="text" id="text" cols="20" rows="10"></textarea>
       </p>
     </fieldset>
-    <fieldset>
+    <fieldset id="remember-me">
       <legend>Remember Me</legend>
       <p>
         <input id="remember-yes" class="radio" name="remember" type="radio"
@@ -80,5 +83,37 @@
         <label for="remember-no">No</label>
       </p>
     </fieldset>
+    <fieldset id="fl4">
+      <legend>personal Information</legend>
+    <p>
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input name="dateOfBirth" id="dateOfBirth" type="text" />
+      <label id="monthOfBirthLabel" for="monthOfBirth">Month of Birth:</label>
+      <select name="monthOfBirth" id="monthOfBirth">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <<option value="3">March</option>
+      </select>
+      <label id="yearOfBirthLabel" for="yearOfBirth">year of Birth:</label>
+      <input name="yearOfBirth" id="yearOfBirth" type="text" />
+      </p>
+
+    <fieldset id="favoriteColor">
+      <h2>Favorite Color:</h2>
+      <div>
+        <p>
+          <input class="checkbox" id="red" name="red" type="checkbox" value="red"/>
+          <label>red</label>
+        </p>
+      </div>
+      <div>
+        <p>
+          <input class="checkbox" id="orange" name="orange" type="checkbox" value="orange"/>
+          <label>orange</label>
+        </p>
+      </div>
+      <br class="clear"/>
+    </fieldset>
+</fieldset>
   </body>
 </html>
