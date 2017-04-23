@@ -1,29 +1,87 @@
-/*使用自动空白边让设计居中
+
+
 body {
-  text-align: center;
-  min-width: 760px;
+  font-size: 62.5%;
+  background: url(../img/background7.jpg) no-repeat center;
 }
 #warpper {
-  width: 720px;
-  margin: 0 auto;ß
+  width: 72em;
+  max-width: 100%;
+  margin: 0 auto;
   text-align: left;
-}*/
-/*使用定位和负值空白边让设计居中
-#warpper {
-  width: 720px;
-  position: relative;
-  left: 50%;
-  margin-left: -360px;
+  background: #fff;
+  background: url(../img/background7.jpg) no-repeat center;
 }
-*/
+
 #content {
-  width: 520px;
+  width: 52em;
+  max-width: 75%;
   float: right;
 }
 #mainNav {
-  width: 180px;
+  width: 18em;
+  max-width: 23%;
   float: left;
+  padding-bottom: 2em;
+}
+#mainContent {
+  width: 32em;
+  max-width: 66%;
+  float: left;
+}
+#secondContent {
+  width: 18em;
+  max-width: 31%;
+  float: right;
 }
 #footer {
   clear: both;
+}
+#branding {
+  height:550px;
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/阴阳师-背景2.jpeg) no-repeat top;
+
+}
+#wangyi {
+  height: 40px;
+  padding-left:60px;
+  background: url(../img/阴阳师-图标1.png) no-repeat 60px top;
+  background-size: 20px;
+}
+#wangyi p{
+  height: 98%;
+  padding-left: 30px;
+  color: #fff;
+}
+#headline {
+  text-align: center;
+  font-size: 3em;
+  color: #ffff99;
+}
+#qingming, #shenyue{
+  width: 30%;
+  float: left;
+}
+#shenyue {
+  padding-left: 15%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#mainNav li{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+#mainNav h1 {
+  padding-left: 1em;
+}
+li:hover {
+  color: red;
+}
+#secondContent h1,#secondContent p {
+  padding-right: 2em;
 }
