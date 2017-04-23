@@ -1,0 +1,29 @@
+/*使用自动空白边让设计居中
+body {
+  text-align: center;
+  min-width: 760px;
+}
+#warpper {
+  width: 720px;
+  margin: 0 auto;ß
+  text-align: left;
+}*/
+/*使用定位和负值空白边让设计居中
+#warpper {
+  width: 720px;
+  position: relative;
+  left: 50%;
+  margin-left: -360px;
+}
+*/
+#content {
+  width: 520px;
+  float: right;
+}
+#mainNav {
+  width: 180px;
+  float: left;
+}
+#footer {
+  clear: both;
+}

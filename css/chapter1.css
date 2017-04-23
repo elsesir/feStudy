@@ -1,7 +1,12 @@
 body {
   background: url(../img/qiao.jpg);
 }
-
+div {
+  width: 720px;
+  position: relative;
+  left: 50%;
+  margin-left: -360px;
+}
 p {
   color: blue;
   font-size: 50px;

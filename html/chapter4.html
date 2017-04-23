@@ -1,11 +1,16 @@
 <html>
 
 <head>
-<title>第四章对链接应用样式</title>
+<title>第四章对链接应用样式与自动空白边居中</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/chapter4.css">
 </head>
 <body>
-<div class="tp1>">
+  <h1 id="headline">固定宽度三列布局</h1>
+  <div id="content">
+    <div id="mainContent">
+<div class="tp1">
+  <h1>主内容</h1>
   <h1>1 简单的链接样式</h1>
   <p><a href="#mainContent">Skip to main content</a></p>
   <p>some content</p>
@@ -39,6 +44,27 @@
     <a href="http://www.baidu.com" class="tooltip">
       百度<span>(this website rocks)</span></a>
       是一个可以查询任何你不知道问题的地方。</p>
+</div>
+</div>
+<div id="secondContent">
+  <h1>这里是一些补充说明</h1>
+  <h4>float是什么意思？</h4>
+  <p>float是浮动，翻译成中文也是浮动意思。进入对应css手册中float手册了解float基本信息。
+  <h4>   float的作用</h4>
+  <p>   通过css定义float（浮动）让div样式层块，向左或向右（靠）浮动。</p>
+</div>
+</div>
+<div id="mainNav">
+  <h2>列表</h2>
+  <ul>
+    <li>1 简单的链接样式</li>
+    <li>2 有趣的下划线</li>
+    <li>3 不同类型的链接</li>
+    <li>4 创建按钮和翻转</li>
+    <li>5 纯CSS工具提示</li>
+</ul>
+</div>
+<div id="footer">
 </div>
 </body>
 </html>
