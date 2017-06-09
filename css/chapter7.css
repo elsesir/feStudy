@@ -81,6 +81,7 @@ ul {
 }
 li:hover {
   color: red;
+  cursor: pointer;
 }
 #secondContent h1,#secondContent p {
   padding-right: 2em;
