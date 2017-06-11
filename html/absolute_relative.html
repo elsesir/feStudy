@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 相对|绝对(relative/absolute)</title>
+    <link rel="stylesheet" href="../css/absolute_relative.css">
+    <script type="text/javascript" src="../js/absolute_relative.js"></script>
+</head>
+<body>
+<div>
+    <h1>postion:absolute和float:left</h1>
+    <h2>包裹性：inline-block化</h2>
+    <p>absolute将默认宽度换为自适应内部元素的宽度</p>
+    <h2>破坏性：切断line box链</h2>
+    <p>float在DOM tree中，高度塌陷；absolute不在DOM tree，高度和宽度都塌陷
+    </p>
+    <div class="xby">
+        <img  id="testImg" class="test_img"  src="../img/阴阳师-晴明.png"  height="200" alt="qingming" />
+        如果在CSS的世界中没有left/top/right/bottom属性，absolute的潜力估计会挖得深得多。
+
+        我们需要意识到，一个应用的position:absolute的元素，其实就只是个非常普通的元素，我感觉与应用了float:left的差异仅仅在于宽度的缺失。为说明此观点，我做了个很简单的demo.
+        <!--<div class="p-name-x">晴明</div>-->
+        <!--<p >无absolute.....</p>-->
+    </div>
+        <div class="test_btn"><button id="testBtn">改为absolute</button></div>
+
+
+    <div class="xby">
+        <img class="abs" src="../img/阴阳师-晴明.png"  height="200" alt="qingming" />
+
+    </div>
+
+    </div>
+</body>
+</html>
