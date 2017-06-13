@@ -7,13 +7,45 @@
     <script type="text/javascript" src="../js/absolute_relative.js"></script>
 </head>
 <body>
+<h2>z-index设置展示</h2>
+<div class="box_zindex">
+    <div class="box_a">A</div>
+    <div class="box_b">B</div>
+    <div class="box_c">C</div>
+</div>
+
+<h2>absolute实现等高布局</h2>
+<div class="out_box">
+    <div class="left_box">
+        <div class="equal_height left_box_bg"></div>
+
+        <div id="leftCon" class="left_con">
+            <img src="../img/阴阳师-晴明.png" height="200" alt="QingMing"/>
+            <img src="../img/阴阳师-晴明.png" height="200" alt="QingMing"/>
+        </div>
+    </div>
+    <div class="right_box">
+        <div id="rightCon" class="right_con">
+            <img src="../img/阴阳师-神乐.png" height="200" alt="ShenYue" />
+        </div>
+    </div>
+</div>
+<div class="btn_box">
+    <botton id="btnLeftSide">左边高度增加</botton>
+    <botton id="btnRightSide">右边高度增加</botton>
+</div>
+<div class="test">
+    <div class="box">CSS relative相对定位的最小化影响原则</div>
+    <div class="rel"><strong class="ok">√</strong></div>
+</div>
 <div>
     <h1>postion:absolute和float:left</h1>
-    <h2>包裹性：inline-block化</h2>
-    <p>absolute将默认宽度换为自适应内部元素的宽度</p>
-    <h2>破坏性：切断line box链</h2>
-    <p>float在DOM tree中，高度塌陷；absolute不在DOM tree，高度和宽度都塌陷
+    <p>包裹性：inline-block化。absolute将默认宽度换为自适应内部元素的宽度</p>
+    <p>破坏性：切断line box链。float在DOM tree中，高度塌陷；absolute不在DOM tree，高度和宽度都塌陷
     </p>
+    <p id="tableCell" class="table-cell">这是一段<code>display:table-cell</code>属性下的文字，点击下面的按钮显隐切换。</p>
+    <p id="displayDisplay" class="display-display"></p>
+    <button id="button" type="button">点击我</button>
     <div class="xby">
         <img  id="testImg" class="test_img"  src="../img/阴阳师-晴明.png"  height="200" alt="qingming" />
         如果在CSS的世界中没有left/top/right/bottom属性，absolute的潜力估计会挖得深得多。
@@ -29,7 +61,6 @@
         <img class="abs" src="../img/阴阳师-晴明.png"  height="200" alt="qingming" />
 
     </div>
-
     </div>
 </body>
 </html>
