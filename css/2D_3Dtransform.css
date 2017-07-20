@@ -103,3 +103,89 @@ div .rotate_right {
     height: 100px;
     border: 1px solid blue;
 }
+.center:hover {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.yinyangshi {
+    width: 70%;
+    /*float:left;*/
+}
+#shenY{
+    margin-left: 20%;
+    position: relative;
+
+}
+#qingM {
+    margin-left: -20%;
+    position: relative;
+}
+@keyframes shenyuechange {
+    0% { left: 0%; }
+    100% {  left:50%; }
+}
+@keyframes qingmingchange {
+    0% {  left: 0%; }
+    100% {  left:-40% ;}
+}
+#shenY:hover {
+    animation:shenyuechange 4s 2 ;
+}
+#qingM:hover {
+
+    animation: qingmingchange 4s 2;
+}
+.btnimg {
+    float: right;
+    color: green;
+    font-size: 6em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.box3D {
+    height: 200px;
+    width: 200px;
+    background-color: #ffccff;
+    perspective: 150px;
+    perspective-origin: 10% 10%;
+    -webkit-perspective: 150px; /* Safari and Chrome */
+    -webkit-perspective-origin: 10% 10%; /* Safari and Chrome */
+}
+/*.father::after {*/
+    /*content: '';*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*clear: both;*/
+/*}*/
+/*.clear {*/
+     /*clear: both;*/
+ /*}*/
+.stage {
+    perspective: 800px;
+}
+.container {
+    transform-style: preserve-3d;
+    margin-left: 100px;
+}
+.container img {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.shen {
+    transform: rotateY(0deg) ;  translateZ(140px);
+}
+.qing {
+    transform: rotateY(90deg) translateZ(140px);
+}
+.yuan {
+    transform: rotateY(180deg) translateZ(140px);
+}
+.ba {
+    transform: rotateY(270deg) translateZ(140px);
+}

@@ -1,0 +1,44 @@
+<script>
+(function() {
+    if (typeof window.screenX === "number") {
+        // 随机颜色HSL
+        var randomHsl = function() {
+                return "hsla(" + Math.round(360 * Math.random()) + "," + "60%, 50%, .75)";
+            }
+            // CSS transform变换应用
+            , transform = function(element, value, key) {
+                key = key || "Transform";
+                ["Moz", "O", "Ms", "Webkit", ""].forEach(function(prefix) {
+                    element.style[prefix + key] = value;
+                });
+
+                return element;
+            }
+            // 浏览器选择器API
+            , $ = function(selector) {
+                return document.querySelector(selector);
+            }, $$ = function(selector) {
+                return document.querySelectorAll(selector);
+            };
+
+        // 显示图片
+        var htmlPic = '', arrayPic = [1, 8, 3, 4], rotate = 360 / arrayPic.length;
+
+        arrayPic.forEach(function(i) {
+            htmlPic = htmlPic + '<img id="piece'+ i +'" src="http://image.zhangxinxu.com/image/study/s/s128/mm'+ i +'.jpg" class="piece" />';
+        });
+
+        // 元素
+        var eleStage = $("#stage"), eleContainer = $("#container"), indexPiece = 0;
+        // 元素
+        var elePics = $$(".piece"), transZ = 100 / Math.tan((rotate / 2 / 180) * Math.PI);
+
+        eleContainer.innerHTML = htmlPic;
+        eleContainer.addEventListener("click", function() {
+            transform(this, "rotateY("+ (-1 * rotate * ++indexPiece) +"deg)");
+        });
+
+        arrayPic.forEach(function(i, j) {
+            transform($("#piece" + i), "rotateY("+ j * rotate +"deg) translateZ("+ (transZ + 20) +"px)");
+        });
+})();
