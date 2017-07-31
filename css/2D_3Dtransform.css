@@ -1,7 +1,22 @@
 div {
     background-color: #edf5ff;
-}
 
+}
+.flexText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#flex-1 {
+    display:flex;
+    flex: 1 0 auto;
+}
+#flexx-2 {
+    display:flex;
+    flex: 1 0 auto;
+}
 .trans1 {
     width: 100px;
     height: 20px;

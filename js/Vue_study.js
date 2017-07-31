@@ -101,7 +101,47 @@ var app1 = new Vue ({
                 })
             }
         }
-    })
+    });
+
+    var clickCounter = new Vue ({
+        el: '#click-counter',
+        data: {
+            counter: 0
+        }
+    });
+
+    var sayHello = new Vue({
+        el: '#say-hello',
+        data: {
+            name: 'vue.js'
+        },
+        methods: {
+            greet: function(event) {
+                alert('hello ' + this.name + '!')
+                if(event) {
+                    alert( event.target.tagName )
+                }
+            }
+        }
+    });
+    var talk = new Vue ({
+        el: '#talk',
+        methods: {
+            say: function(word) {
+                alert(word)
+            }
+        }
+    });
+    var eventDOM = new Vue ({
+        el: '#event-dom',
+        methods: {
+            warn: function(message, event) {
+                if(event) event.preventDefault()
+                alert(message)
+            }
+        }
+    });
+
     var app5 = new Vue ({
         el: '#app-5',
         data: {
@@ -118,9 +158,151 @@ var app1 = new Vue ({
         el: '#app-6',
         data: {
             message: 'hello Vue.JS'
+        },
+        methods: {
+            submit: function() {
+                alert('submit')
+            }
         }
     });
 
+    var clickMeta = new Vue ({
+        el: '#click-meta' ,
+        methods: {
+            doSomething: function() {
+                alert('I do')
+            }
+        }
+    });
+
+    var input1 = new Vue ({
+        el: '#input-1' ,
+        data: {
+            message: ''
+        }
+    });
+
+    var input2 = new Vue ({
+        el: '#input-2',
+        data: {
+            message: ''
+        }
+    });
+
+    var inputLasy = new Vue({
+        el: '#input-lasy',
+        data: {
+            msy: 'disabled'
+        }
+    });
+    var checkBox = new Vue ({
+        el: '#check-box' ,
+        data: {
+            checked: false
+        }
+    });
+    var checkBoxes = new Vue ({
+        el:'#check-boxes' ,
+        data: {
+            checkName : []
+        }
+    });
+    var checkBox3 = new Vue ({
+        el: '#check-box3' ,
+        data: {
+            checked3: false,
+            isTrue: 'T',
+            isFalse: 'F'
+        }
+    });
+
+    var radioExample = new Vue ({
+        el: '#radio-example' ,
+        data: {
+            picked: 'which do you want to eat'
+        }
+    });
+    var radioS = new Vue({
+        el: '#radio-s',
+        data: {
+            a: 'A',
+            radioValue : 'radioValue'
+        }
+    });
+    var selectList = new Vue ({
+        el: '#select-list' ,
+        data: {
+            selected: ''
+        }
+    });
+    var multiple = new Vue ({
+        el: '#select-lists',
+        data: {
+            selectM: [ ]
+        }
+    });
+    var selectFor = new Vue({
+        el: '#select-for' ,
+        data: {
+            selects:'',
+            options: [
+                { text:'one', value: 'A'},
+                { text:'two', value: 'B'},
+                { text:'three', value: 'C'}
+            ]
+
+        }
+    });
+    var selectV = new Vue({
+        el: '#select-v',
+        data: {
+            selectv: []
+        }
+    });
+    Vue.component('my-component',{
+        template:'<div>A custom component!</div>'
+    });
+    var myComponent = new Vue({
+        el:'#component-exm'
+    });
+    var component_child = {
+        template:'<div>A</div>'};
+    var componentChild = new Vue({
+        el: '#component-exm2',
+        components: {
+            'component-child' : component_child
+        }
+    });
+
+    Vue.component ('simple-counter',{
+        template: '<button v-on:click="{ counter +=1}">{{ counter}}</button>',
+        data: function() {
+               return {
+                   counter: 0
+               }
+            }
+
+    });
+    var component3 = new Vue ({
+        el: '#component-exm3'
+    });
+
+    Vue.component('child',{
+        template: '<p>{{ message }}</p>',
+        props:['message']
+    });
+    var componentC = new Vue({
+       el: '#component-child',
+        data: {
+            message: 'i'
+       }
+    });
+    var componentc2 = new Vue({
+        el: '#component-child2',
+        data: {
+            parentMsg : 'add words'
+        }
+    });
     // Define a new component called todo-item
     Vue.component('todo-item',{
         // The todo-item component now accepts a
@@ -140,6 +322,35 @@ var app1 = new Vue ({
         }
 
     });
+
+    Vue.component('button-counter',{
+        template: '<button v-on:click="increment">{{ counter }}</button>',
+        data: function() {
+            return {
+            counter:0
+            }
+        },
+        methods: {
+            increment: function(){
+                this.counter +=1
+                this.$emit('increment')
+            }
+        }
+    });
+    var buttonCounterExm = new Vue({
+        el: '#button-counter-exm',
+        data: {
+            total:0
+        },
+        methods: {
+            incrementTotal: function() {
+                alert('按钮被按动'),
+                this.total +=2
+
+            }
+        }
+    })
+
 
     var vm = new Vue({
         el: '#example' ,
@@ -239,6 +450,7 @@ var app1 = new Vue ({
             }
         }
     })
+
 
 
 }

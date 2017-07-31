@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app-1" class="{ borders: hasBorder}, textClass">
-    {{ message }}
+   <div class="titleCenter"> {{ message }}  </div>
 </div>
 <div id="app-2" v-bind:style = "styleObject">
     <span v-bind:title = "message">
@@ -21,7 +21,8 @@
 <div id="app-3">
    <p v-if="seen">Now you can see me!</p>
 </div>
-<h1>列表</h1>
+<h1>一、列表渲染</h1>
+
 <h2>1.列表 v-for</h2>
 <div id="app-4">
     <ol>
@@ -62,31 +63,187 @@
         </li>
     </ul>
 </div>
-<h2>6.1 过滤后的列表1-计算属性computed</h2>
+<div class="flexBox">
+
 <div id="filter-list">
+    <h2>6.1 过滤后的列表1-计算属性computed</h2>
     <li v-for=" n in evenNumbers">{{ n }}</li>
 </div>
-<h2>6.2 过滤后的列表2-method</h2>
+
 <div id="filter-list2">
+    <h2>6.2 过滤后的列表2-method</h2>
+
     <li v-for="n in even(numbers)">{{ n }}</li>
+</div>
+</div>
+<h1>二、事件处理器</h1>
+<h2>1.监听事件</h2>
+<div id="click-counter">
+    <button v-on:click="counter += 1">增加1</button>
+    <p>这个按钮被按了{{ counter }} 次。</p>
+</div>
+<h2>2.方法事件处理器</h2>
+<div id="say-hello">
+    <button v-on:click="greet">Greet</button>
 </div>
 <div id="app-5">
     <p>{{ message }}</p>
     <button v-on:click="reverseMessage">Reverse Message</button>
 </div>
-
+<h2>3.内联处理器</h2>
+<div id="talk">
+    <button v-on:click=" say('hi')">Say Hi!</button>
+    <button v-on:click="say('what')">Say What?</button>
+</div>
+<div id="event-dom">
+    <button v-on:click="warn('Form cannot be submitted yet.', $event)">
+        Submit
+    </button>
+</div>
+<h2>4.键值修饰符</h2>
 <div id="app-6">
     <p>{{ message }}</p>
-    <input v-model="message">
+    <input v-model="message" v-on:keyup.enter="submit" >
 </div>
 
+<h2>5.修饰键</h2>
+<button id="click-meta" v-on:click.meta="doSomething">
+Do Something
+</button>
+<h1>三、表单控件绑定</h1>
+<h2>1.基本用法-文本</h2>
+<div id="input-1">
+    <input v-model="message" placeholder="edit me.">
+     <p>Message is : {{ message }}</p>
+</div>
+<div id="input-2">
+    <textarea v-model="message" placeholder="add multiple lines"></textarea>
+    <br>
+    <span>Multiline message is : </span>
+    <p style="white-space: pre-line">{{ message }}</p>
+</div>
+<h3>3)修饰键.lasy</h3>
+<div id="input-lasy">
+    <input v-model.lasy="msy">
+    <p>修饰键lasy,在change事件中同步结果：{{ msy }}</p>
+</div>
+<h2>2.复选框</h2>
+<h3>1)单个复选框</h3>
+<div id="check-box">
+    <input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">{{ checked }}</label>
+</div>
+<h3>2)多个复选框</h3>
+<div id="check-boxes">
+    <input type="checkbox" id="jack-id" value="jack-value" v-model="checkName">
+    <label for="jack-id">Jack</label>
+    <input type="checkbox" id="john-id" value="john-value" v-model="checkName">
+    <label for="john-id">John</label>
+    <input type="checkbox" id="mike" value="mike-value" v-model="checkName">
+    <label for="mike">Mike</label>
+    <br>
+    <span>Checked Name: {{ checkName }}</span>
+</div>
+<h3>3)动态绑定value</h3>
+<div id="check-box3">
+    <input v-model="checked3" id="checkbox3" type="checkbox"
+           v-bind:true-value="isTrue" v-bind:false-value="isFalse">
+    <label for="checkbox3">{{ checked3 }}</label>
+    <p>动态绑定value的复选框值，此时的值为 is : {{ checked3 }}</p>
+</div>
+
+<h2>3.单选按钮</h2>
+<div id="radio-example">
+    <input type="radio" id="rice-id" value="rice" v-model="picked">
+    <label for="rice-id">Rice</label>
+    <input type="radio" id="noodles-id" value="noodles" v-model="picked">
+    <label for="noodles-id">Noddles</label>
+    <br>
+    <span>Picked : {{ picked }}</span>
+</div>
+<div id="radio-s">
+    <input type="radio" v-model="radioValue" v-bind:value="a">
+    <label>{{ a }}</label>
+    <span> （动态绑定value的）单选按钮值 : {{ radioValue }}</span>
+</div>
+<h2>4.选择列表</h2>
+<h3>1)单选列表</h3>
+<div id="select-list">
+    <select v-model="selected">
+        <option disabled value>请选择：</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <span>Selected : {{ selected }}</span>
+</div>
+<h3>2)多选列表</h3>
+<div id="select-lists">
+    <select v-model="selectM" multiple style="width: 50px">
+        <option disabled value>请选择：</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <br>
+    <span>Selected : {{ selectM }}</span>
+</div>
+<h3>3)动态选项</h3>
+<div id="select-for">
+    <select v-model="selects">
+        <option disabled value>请选择</option>
+        <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+        </option>
+    </select>
+    <br>
+    <span>数组形成列表：{{ selects }}</span>
+</div>
+<h3>4)绑定value</h3>
+<div id="select-v">
+    <select v-model="selectv">
+        <option v-bind:value="{number: 234 }">123</option>
+    </select>
+    <br>
+    <span>选择列表设置：{{ selectv }}</span>
+</div>
+
+<h1> 三、组件</h1>
+<h2>1.注册全局组件</h2>
+<div id="component-exm">
+    <my-component></my-component>
+</div>
+<h2>2.注册局部组件</h2>
+<div id="component-exm2">
+    <component-child></component-child>
+</div>
+<h2>3.data必须是函数</h2>
+<div id="component-exm3">
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+</div>
+<h2>4.props</h2>
+<div id="component-child">
+    <child message="hello child"></child>
+    </div>
+
+<div id="component-child2">
+    <input v-model="parentMsg">
+    <br>
+    <child v-bind:message="parentMsg"></child>
+</div>
 <div id="app-7">
     <ol>
         <!-- Create an instance of the todo-item component -->
         <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
     </ol>
 </div>
-
+<h3>5.自定义事件</h3>
+<div id="button-counter-exm">
+    <p>{{ total }}</p>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+</div>
 <div id="example">
     <p>Original message:"{{ message }}"</p>
     <p>Computed reversed message :"{{ reversedMessage }}"</p>
