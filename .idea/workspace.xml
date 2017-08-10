@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221d7d13-2012-4836-9e56-2abfcf4f197b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bigWhite.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/study.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/interview_question.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jQuerystudy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/Ajax_node.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/BOM_study.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/interview_question.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Ajax_node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/BOM_study.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.rotate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/2D_3Dtransform.css" afterPath="$PROJECT_DIR$/css/2D_3Dtransform.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chapter1.css" afterPath="$PROJECT_DIR$/css/chapter1.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/2D_3Dtransform.html" afterPath="$PROJECT_DIR$/html/2D_3Dtransform.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/chapter1.html" afterPath="$PROJECT_DIR$/html/chapter1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/jqUerystudy.html" afterPath="$PROJECT_DIR$/html/jqUerystudy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jqUerystudy.js" afterPath="$PROJECT_DIR$/js/jqUerystudy.js" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -288,15 +302,15 @@
       <updated>1501648336814</updated>
       <workItem from="1501648337978" duration="511000" />
       <workItem from="1502119460719" duration="2839000" />
-      <workItem from="1502125607268" duration="24478000" />
+      <workItem from="1502125607268" duration="24571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27828000" />
+    <option name="totallyTimeSpent" value="27921000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
