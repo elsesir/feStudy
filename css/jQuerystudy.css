@@ -1,0 +1,48 @@
+div {
+    margin: 30px;
+}
+.circle {
+    box-sizing: border-box;
+    border: 6px solid #0066ff;
+    border-radius: 55px;
+    width: 100px;
+    height: 100px;
+}
+.text {
+    box-sizing: border-box;
+    position: relative;
+    width: 112px;
+    height: 112px;
+    text-align: center;
+    border-radius: 0;
+
+}
+.outer {
+    margin: 0;
+    position: absolute;
+    transform: rotate(0deg);
+    border-color: lightgray;
+    border-radius: 55px;
+}
+.sx1 {
+    margin: 0;
+    position: absolute;
+    transform: rotate(0deg);
+    clip: rect(0px,50px,100px,0px); /*这个clip属性用来绘制半圆，在clip的rect范围内的内容显示出来，使用clip属性，元素必须是absolute的 */
+    border-color: lightgray;
+}
+.sx2 {
+    margin:0;
+    position: absolute;
+    transform: rotate(0deg);
+    clip: rect(0, 50px,100px,0);
+
+    border-color: lightgray;
+}
+.xigua {
+    background-color: red;
+    border-color: #0086B3;
+    position: absolute;
+    transform: rotate(-90deg);
+    clip: rect(0,50px,100px,0);
+}

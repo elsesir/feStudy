@@ -2,7 +2,7 @@ div {
     background-color: #edf5ff;
 
 }
-.flexText {
+.flextest {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,12 +10,11 @@ div {
     align-items: center;
 }
 #flex-1 {
-    display:flex;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
 }
 #flexx-2 {
     display:flex;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
 }
 .trans1 {
     width: 100px;
