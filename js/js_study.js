@@ -1,7 +1,24 @@
 /**
  * Created by bigWhite on 17/8/8.
  */
-//call /apply/bind函数学习
+/**定义一个可以被new的对象Person,包含一个方法walk;Child继承Person，并在Child中重写walk函数。
+ * 对于js继承来说，一般属性值保存在自身，方法保存在prototype上。既可以满足方法的复用，又不会引起
+ * 引用类型的属性值不正常的被修改。
+ * */
+function Person() {
+    this.name = "a";
+}
+Person.prototype = function () {
+    console.log("walk");
+};
+var Child = new Person;
+Child.walk = function() {
+    console.log("child walk");
+};
+Child.walk();
+
+/**call /apply/ bind函数学习
+ * bind:可以绑定函数的this值；可以实现偏函数，主要是函数柯里化**/
 Function.protptype.bind2 = function(context) {
     var aArgs = Array.prototype.slice.call(arguments,1);
     var self = this;
@@ -172,6 +189,7 @@ function shallowCopy(src) {
     }
     return dst;
 }
+/**融合两个或者多个对象，参数是相同对象的两者合并**/
 var china = {
     nation : '中国',
     birthplaces:{
