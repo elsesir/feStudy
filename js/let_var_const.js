@@ -34,8 +34,8 @@
  };
  a.b();
  }
- inner();
-
+ inner();//100
+//b:function(){console.log(this.i);} a.b()=>2
 
  */
 /*

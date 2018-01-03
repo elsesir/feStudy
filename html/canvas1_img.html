@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用canvas将两张图片合为一张</title>
+    <link href="../css/canvas1_img.css" type="text/css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../js/canvas1_img.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="code-img">
+    <img class="qr-code" src="http://ou2blo0sw.bkt.clouddn.com/qr.png" alt="分享二维码获取次数"/>
+    <img class="qr-background" src="../img/qr_bg.png" alt="体验个股分钟级机会风险提示" />
+    <!--<canvas class="qr-img" width="500px" height="800px"></canvas>-->
+</div>
+<div id="imgBox" align="center">
+    <span style="font-size: 100px;">一键合成</span>
+</div>
+<div class="code-img  show-img">
+    <canvas id="cv" class="qr-img" width="648px" height="952px"></canvas>
+    <!--<img id="test"src=""/>-->
+</div>
+
+</body>
+</html>

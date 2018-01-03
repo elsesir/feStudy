@@ -19,7 +19,7 @@ Child.walk();
 
 /**call /apply/ bind函数学习
  * bind:可以绑定函数的this值；可以实现偏函数，主要是函数柯里化**/
-Function.protptype.bind2 = function(context) {
+Function.prototype.bind2 = function(context) {
     var aArgs = Array.prototype.slice.call(arguments,1);
     var self = this;
     F = function () {};
@@ -52,15 +52,7 @@ Function.prototype.bind = function (oThis) {
     return fBound;
 
 };
-var obj = { a:2, b:3 , c:4};
-//alert(test.sum.call(obj,7,8,9).result);
-//alert(test.sum.apply(obj, [ 9,0,1]));
-var sum2 = test.sum;
-//sum2();//sum2的this指向window
-var sum = test.sum.bind(obj,1,3);//sum的this指向obj
-alert( sum(2) );
-//alert(test.sum(1,2,3).result);
-//alert(binds(test.sum,obj,5,6,7));
+
 
 /*  参数：待检测字符串；返回：json格式信息）
  *     思路：URL一般语法格式为：
@@ -295,7 +287,7 @@ var c = 30;
 
 // //bom学习
 // //重复达到最大值后取消间歇调用。
-// /*var num = 0;
+var num = 0;
 var max = 5;
 var intervalId = null;
 function incrementNumber(){
@@ -336,3 +328,78 @@ function incrementNumber(){
     return args;
 }*/
 
+/**二叉搜索树树：又称二叉排序树，二叉查找树，它或者是一棵空树，或是是一棵这样的二叉树：
+ * 如果它的左子树不为空，则左子树上所有节点的值均小于它的根节点得值；
+ * 如果它的右子树不为空，则右子树上所有节点的值均大于它的根节点的值；
+ * 它的左右子树也分别是二叉搜索树。
+ * 将一个从小到大排序号的数组转换成二叉搜索树：
+ * 数组二分，取中间值作为根，将前后部分分别作为左右子树插入，递归调用函数，直到数组为空。**/
+//构建节点
+function Node(nodeData,leftData,rightData) {
+    this.nodeData = nodeData;
+    this.leftData = leftData;
+    this.rightData = rightData;
+}
+//取中间值作为根节点值，左右子树递归调用，直到数组为空
+function createTree(array) {
+    if(array.length <= 0 ) {
+        return null;
+    } else {
+        var mid = parseInt(array.length / 2);
+        var node = new Node(array[mid],null,null);
+        var leftArray = array.slice(0, mid);
+        var rightArray = array.slice(mid+1, array.length);
+        node.leftData = createTree(leftArray);
+        node.rightData = createTree(rightArray);
+        return node;
+    }
+}
+var Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var Tree = createTree(Array);
+// console.log(Tree);
+
+function f1 () {
+    var n = 999;
+    nuadd = function() {
+        n=n+1;
+        console.log(n);
+    };
+    function f2 () {
+        console.log(n);
+    }
+    return f2();
+}
+var resultf1 = f1();
+var resultf2 = f1();
+nuadd();
+resultf1 = f1();
+resultf2 = f1();
+
+/*var a = 100;
+function f2() {
+    var b = 2 * a;
+    console.log(a);
+    var a = 200;
+    var c = a / 2;
+    console.log(b); //NaN
+    console.log(c); //100
+}
+f2();
+    */
+
+var a = 100;
+var b = "100";
+console.log(b- a);//0
+console.log(typeof (b- a));//number
+console.log(a + b - a);//100000
+console.log(typeof (a + b - a));//number
+console.log(a + b);//100100
+console.log(typeof (a + b));//string
+console.log(a + b - b);//100000
+console.log(typeof (a + b - b));//number
+console.log(a + b - b - b);//99900
+console.log(typeof (a + b - b - b));//number
+console.log(a +b - b +a);//100100
+console.log(typeof(a +b - b +a));//number
+console.log(true + 1);//2
+console.log(true + "1");//true1
