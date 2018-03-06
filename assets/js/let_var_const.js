@@ -1,0 +1,1 @@
+var tmp=123;tmp="abc",console.log(tmp),console.log(tmp);

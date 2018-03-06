@@ -66,8 +66,7 @@ window.onload = function() {
                 img.onload=function(){
                     if(n==1){
                         ctx.drawImage(img,46,741,165,165);
-                    }
-                    else{
+                    } else{
                         ctx.drawImage(img,0,0,c.width,c.height);
                     }
                     drawing(n+1);//递归

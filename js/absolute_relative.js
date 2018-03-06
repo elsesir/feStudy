@@ -3,6 +3,7 @@
  */
 
 window.onload=function() {
+    console.log('hello world');
     // $("#btnLeftSide").bind("click", function() {
     //     $("#leftCon").append('<img src="../img/阴阳师-神乐.png" height="200" alt="ShenYue" />');
     // });

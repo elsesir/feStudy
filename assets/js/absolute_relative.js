@@ -1,0 +1,1 @@
+window.onload=function(){console.log("hello world");var t=document.getElementById("testImg");document.getElementById("testBtn").onclick=function(){"改为absolute"===this.innerHTML?(t.style.position="absolute",this.innerHTML="去除absolute"):(t.style.position="static",this.innerHTML="改为absolute")}};

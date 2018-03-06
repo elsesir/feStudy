@@ -1,0 +1,1 @@
+function Node(e,t,r){this.nodeData=e,this.leftData=t,this.rightData=r}function createTree(e){if(e.length<=0)return null;var t=parseInt(e.length/2),r=new Node(e[t],null,null),a=e.slice(0,t),n=e.slice(t+1,e.length);return r.leftData=createTree(a),r.rightData=createTree(n),r}var Array=[1,2,3,4,5,6,7,8,9,10],Tree=createTree(Array);console.log(Tree);

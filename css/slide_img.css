@@ -1,0 +1,36 @@
+div, span, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img-circle{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.img-circle-inner {
+    position: relative;
+    width: 500%;
+}
+.circle-img {
+    float: left;
+    width: 20%;
+}
+.page-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.circle-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #c7b279;
+    border-radius: 50%;
+}
+.circle-icon-active {
+    background: #c7b279;
+}

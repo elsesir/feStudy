@@ -1,12 +1,13 @@
+div span {
+    display: inline-block;
+    margin: 10px 20px;
+}
 .triangle1{
     width: 0px;
     height: 0px;
-    padding: 0px;
-    margin: 60px 70px 80px 90px;
-    border-color: red transparent;
-    border-width: 100px;
+    border-color: red purple yellow orange;
+    border-width: 50px;
     border-style: solid;
-    border-bottom: transparent;
 }
 .triangle2 {
     width: 0;
@@ -18,7 +19,6 @@
 .triangle3 {
     width: 0;
     height: 0;
-    margin: 30px;
     border-color: #9933ff transparent transparent transparent;
     border-style: solid;
     border-width: 50px;
@@ -34,12 +34,99 @@
 .triangle5 {
     width: 0;
     height: 0;
-    margin-top: 20px;
     border-left: 50px solid #9933ff;
-
     border-bottom: 50px solid transparent;
+}
 
-
-
-
+.heart1 {
+    width: 0;
+    height: 0;
+    border: 50px solid red;
+    border-color: red purple yellow orange;
+}
+.heart2 {
+    width: 0;
+    height: 0;
+    border: 50px dotted red;
+    border-color: red purple yellow orange;
+}
+.heart3 {
+    width: 0;
+    height: 0;
+    border-style: double;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.heart4 {
+    width: 0;
+    height: 0;
+    border-style: dashed;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.heart5 {
+    width: 0;
+    height: 0;
+    border-style: groove;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.heart6 {
+    width: 0;
+    height: 0;
+    border-style: ridge;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.heart7 {
+    width: 0;
+    height: 0;
+    border-style: inset;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.heart8 {
+    width: 0;
+    height: 0;
+    border-style: outset;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.ribbon1 {
+    height: 60px;
+    border-style: solid;
+    border-color: red purple yellow orange;
+    border-width: 50px;
+}
+.ribbon2 {
+    height: 60px;
+    border-style: solid;
+    border-color: red red transparent red;
+    border-width: 50px;
+}
+.circle1 {
+    border-radius: 50px;
+    border-width: 50px;
+    border-color: red purple yellow orange;
+    border-style: solid;
+}
+.circle2 {
+    border-radius: 50px;
+    border-width: 50px;
+    border-color: red purple transparent transparent;
+    border-style: solid;
+}
+.circle3 {
+    width: 50px;
+    height: 50px;
+    background: #FFEB18;
+    border-top-left-radius: 50px;
+    border: 2px solid #5D5D2B;
+    border-color: red purple yellow orange;
+}
+.circle4 {
+    border-radius: 50px;
+    border-width: 50px;
+    border-color:  #FFEB18 transparent  #FFEB18  #FFEB18 ;
+    border-style: solid;
 }
