@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML data学习</title>
+</head>
+<body>
+<div id="test" data-uid="ID233" data-name="小明">
+    <p>欢迎登录</p>
+</div>
+<script>
+    var testDiv = document.getElementById('test');
+    var userId = testDiv.dataset.uid;
+    var userName = testDiv.getAttribute('data-name');
+    console.log(userId,userName);
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template学习</title>
+    <style type="text/css">
+        .mark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mark img {
+            width: 300px;
+        }
+
+    </style>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div id="template-part">
+    <span>template</span>
+    <button id="pop_template" onclick="onTemplate()">点我弹窗</button>
+</div>
+<template id="popt">
+    <div class="mark" onclick="onPopClick()">
+        <img src="../../img/background7.jpg" >
+    </div>
+
+</template>
+<script type="text/javascript">
+    var body = $('body');
+
+    function onTemplate () {
+        console.log('click');
+        var innerPart = popt.innerHTML;
+        body.append(innerPart);
+    }
+    function onPopClick() {
+        console.log('pop');
+        $('.mark').remove();
+    }
+</script>
+</body>
+</html>
