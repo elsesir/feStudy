@@ -1,0 +1,243 @@
+.part {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.part:nth-of-type(2n) {
+    background: #4ea980;
+}
+.circle {
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+.loading1 {
+    /*border: 10px solid dodgerblue;*/
+    /*border-left: 10px solid dodgerblue;*/
+    /*border-right: 10px solid lightgreen;*/
+    border-top: 10px solid greenyellow;
+    border-bottom: 10px solid palevioletred;
+    animation: loading1 200ms infinite;
+}
+@keyframes loading1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform:rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform:rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading2 {
+    position:relative;
+    /*border:10px solid white;*/
+    box-shadow: inset 0 0 0 10px #FFF;
+
+}
+.loading2:before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: #4ea980;
+
+    border-radius:0 100px 100px 0;
+    left: 50px;
+
+    transform-origin: 0 50px;
+    animation: circle 1.5s infinite linear;
+}
+.loading2:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left:0;
+    box-shadow: inset 0 0 0 10px rgba(255,255,255,.2);
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform : rotate(360deg);
+    }
+}
+.loading3 {
+    position: relative;
+    width:100px;
+    height: 100px;
+    background:linear-gradient(to right, #4ea980 10%, rgba(78,169,128,0) 100%);
+    /*box-shadow: inset 0 0 0 10px rgba(78,169,128,.2);*/
+    animation: circle 1s infinite linear;
+}
+.quarter {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 0 100% 0 0;
+    top: 0;
+    left: 50%;
+}
+.loading3:before {
+    position: absolute;
+    content:'';
+    width: 50%;
+    height: 50%;
+    background: #4ea980;
+    border-radius:100% 0 0 0 ;
+    top: 0;
+    left:0;
+}
+.loading3:after {
+    background: white;
+    width: 80px;
+    height: 80px;
+    content: '';
+    border-radius: 50%;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+.loading4 {
+    font-size: 20px;
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    animation: loading-sharing1 1s infinite linear;
+
+}
+@keyframes loading-sharing1 {
+    /* box-shadow: 左移 下移 模糊距离 外扩 颜色*/
+    0% {
+        box-shadow: -3rem 2rem 0 0.5rem #FFF, 0 2rem 0 0 #FFF, 3rem 2rem 0 -0.5rem #FFF;
+    }
+    25%  {
+        box-shadow: -3rem 2rem 0 0 #FFF, 0 2rem 0 -0.5rem #FFF, 3rem 2rem 0 0 #FFF;
+    }
+    50% {
+        box-shadow: -3rem 2rem 0 -0.5rem #FFF, 0 2rem 0 0 #FFF, 3rem 2rem 0 0.5rem #FFF;
+    }
+    75% , 100%{
+        box-shadow: -3rem 2rem 0 0 #FFF, 0 2rem 0 0.5rem #FFF, 3rem 2rem 0 0 #FFF;
+    }
+    100%{
+    box-shadow: -3rem 2rem 0 0.5rem #FFF, 0 2rem 0 0 #FFF, 3rem 2rem 0 -0.5rem #FFF;
+    }
+}
+
+.loading5 {
+    font-size: 20px;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    animation: loading-sharing2 1s infinite linear;
+
+}
+@keyframes loading-sharing2 {
+    0% {
+        box-shadow: -2rem -2rem 0 0 #4ea980,
+        0 -2.8rem 0 0.2rem #4ea980,
+        2rem -2rem 0 0 #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 -0.5rem #4ea980,
+        -2rem 2rem 0 -0.5rem #4ea980,
+        -2.8rem 0 0 -0.5rem #4ea980;
+    }
+    12.5% {
+        box-shadow: -2rem -2rem 0 -0.5rem #4ea980,
+        0 -2.8rem 0 0 #4ea980,
+        2rem -2rem 0 0.2rem #4ea980,
+        2.8rem 0 0 0 #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 -0.5rem #4ea980,
+        -2rem 2rem 0 -0.5rem #4ea980,
+        -2.8rem 0 0 -0.5rem #4ea980;
+    }
+    25% {
+         box-shadow: -2rem -2rem 0 -0.5rem #4ea980,
+         0 -2.8rem 0 -0.5rem #4ea980,
+         2rem -2rem 0 0 #4ea980,
+         2.8rem 0 0 0.2rem #4ea980,
+         2rem 2rem 0 0 #4ea980,
+         0 2.8rem 0 -0.5rem #4ea980,
+         -2rem 2rem 0 -0.5rem #4ea980,
+         -2.8rem 0 0 -0.5rem #4ea980;
+     }
+    37.5% {
+        box-shadow: -2rem -2rem 0 -0.5rem #4ea980,
+        0 -2.8rem 0 -0.5rem #4ea980,
+        2rem -2rem 0 -0.5rem #4ea980,
+        2.8rem 0 0 0 #4ea980,
+        2rem 2rem 0 0.2rem #4ea980,
+        0 2.8rem 0 0 #4ea980,
+        -2rem 2rem 0 -0.5rem #4ea980,
+        -2.8rem 0 0 -0.5rem #4ea980;
+    }
+    50% {
+        box-shadow: -2rem -2rem 0 -0.5rem #4ea980,
+        0 -2.8rem 0 -0.5rem #4ea980,
+        2rem -2rem 0 -0.5rem #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 0 #4ea980,
+        0 2.8rem 0 0.2rem #4ea980,
+        -2rem 2rem 0 0 #4ea980,
+        -2.8rem 0 0 -0.5rem #4ea980;
+    }
+    62.5% {
+        box-shadow: -2rem -2rem 0 -0.5rem #4ea980,
+        0 -2.8rem 0 -0.5rem #4ea980,
+        2rem -2rem 0 -0.5rem #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 0 #4ea980,
+        -2rem 2rem 0 0.2rem #4ea980,
+        -2.8rem 0 0 0 #4ea980;
+    }
+    75% {
+        box-shadow: -2rem -2rem 0 0 #4ea980,
+        0 -2.8rem 0 -0.5rem #4ea980,
+        2rem -2rem 0 -0.5rem #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 -0.5rem #4ea980,
+        -2rem 2rem 0 0 #4ea980,
+        -2.8rem 0 0 0.2rem #4ea980;
+    }
+    87.5% {
+        box-shadow: -2rem -2rem 0 0.2rem #4ea980,
+        0 -2.8rem 0 0 #4ea980,
+        2rem -2rem 0 -0.5rem #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 -0.5rem #4ea980,
+        -2rem 2rem 0 -0.5rem #4ea980,
+        -2.8rem 0 0 0 #4ea980;
+    }
+    100% {
+        box-shadow: -2rem -2rem 0 0 #4ea980,
+        0 -2.8rem 0 0.2rem #4ea980,
+        2rem -2rem 0 0 #4ea980,
+        2.8rem 0 0 -0.5rem #4ea980,
+        2rem 2rem 0 -0.5rem #4ea980,
+        0 2.8rem 0 -0.5rem #4ea980,
+        -2rem 2rem 0 -0.5rem #4ea980,
+        -2.8rem 0 0 -0.5rem #4ea980;
+    }
+
+}
