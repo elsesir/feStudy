@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 40px 0;
     overflow: hidden;
 }
 .part:nth-of-type(2n) {
@@ -14,6 +14,14 @@
     width: 100px;
     height:100px;
     border-radius: 50%;
+    margin:0;
+    padding:0;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .loading1 {
     /*border: 10px solid dodgerblue;*/
@@ -240,4 +248,139 @@
         -2.8rem 0 0 -0.5rem #4ea980;
     }
 
+}
+.loading6 {
+    font-size: 20px;
+    width:1rem;
+    height: 1rem;
+    position: relative;
+
+    animation: loading-sharing6 1s infinite linear;
+}
+@keyframes loading-sharing6 {
+    0% {
+        box-shadow: 0 0 0 0.2rem #fff;
+    }
+    100% {
+        box-shadow: 0 0 0.2rem 0.1rem  #fff,
+        0 -2.8rem 0 -0.2rem #ffffff,
+        2rem -2rem 0 -0.2rem #fff,
+        2.8rem 0 0 -0.2rem #ffffff,
+        2rem 2rem 0 -0.2rem #ffffff,
+        0 2.8rem 0 -0.2rem #ffffff,
+        -2rem 2rem 0 -0.2rem #ffffff,
+        -2.8rem 0 0 -0.2rem #ffffff,
+        -2rem -2rem 0 -0.2rem #ffffff;
+    }
+
+}
+.loading7 {
+    box-shadow: 0 0 0 4px #4cbdc0 inset;
+}
+.loading7:before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 0 100px 100px 0;
+    background: #fff;
+    left: 50%;
+
+    transform-origin: 0 50px;
+    animation: circle 1s infinite linear;
+}
+.loading7::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #c0c0c0 inset;
+    opacity: 0.3;
+}
+
+
+.loading7-inner {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #95c03f inset;
+}
+.loading7-inner::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height:80px;
+    right: 50%;
+    border-radius: 100px 0 0 100px;
+    background: #fff;
+    transform-origin: 40px 40px;
+    animation: circle 2s infinite linear;
+}
+.loading7-inner::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #c0c0c0 inset;
+    opacity: 0.3;
+    border-radius: 50%;
+}
+.loading8-outer {
+    position: absolute;
+    box-sizing: border-box;
+    border: 3px solid #e34981;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    transform-origin: 50px 50px;
+    animation: circle 2s linear reverse infinite;
+}
+.loading8-inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 85px;
+    height: 85px;
+    border: 3px solid #e34981;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    animation: circle 2s linear infinite;
+}
+.loading8-center {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #e34981;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: circle 1s linear infinite;
+}
+.loading8-circle {
+    width: 20px;
+    height: 20px;
+    font-size: 35px;
+    animation: loading8-sharing8 1s ease infinite;
+}
+@keyframes loading8-sharing8 {
+    0% {
+        box-shadow: 0 -2em 0 0 #e34981, 1em -1.7em 0 0 #e34981, 1.7em -1em 0 0 #e34981,
+        2em 0 0 0 #e34981, 1.7em 1em 0 0 #e34981, 1em 1.7em 0 0 #e34981,
+        0 2em 0 0 #e34981, -1em 1.7em 0 0 #e34981, -1.7em 1em 0 0 #e34981,
+        -2em 0 0 0 #e34981, -1.7em -1em 0 0 #e34981, -1em -1.7em 0 0 #e34981;
+    }
+    50% {
+        box-shadow: 0 -2em 0 -0.5em #e34981, 1em -1.7em 0 -0.5em #e34981, 1.7em -1em 0 -0.5em #e34981,
+        2em 0 0 -0.5em #e34981, 1.7em 1em 0 -0.5em #e34981, 1em 1.7em 0 -0.5em #e34981,
+        0 2em 0 -0.5em #e34981, -1em 1.7em 0 -0.5em #e34981, -1.7em 1em 0 -0.5em #e34981,
+        -2em 0 0 -0.5em #e34981, -1.7em -1em 0 -0.5em #e34981, -1em -1.7em 0 -0.5em #e34981;
+    }
+    100% {
+        box-shadow: 0 -2em 0 0 #e34981, 1em -1.7em 0 0 #e34981, 1.7em -1em 0 0 #e34981,
+        2em 0 0 0 #e34981, 1.7em 1em 0 0 #e34981, 1em 1.7em 0 0 #e34981,
+        0 2em 0 0 #e34981, -1em 1.7em 0 0 #e34981, -1.7em 1em 0 0 #e34981,
+        -2em 0 0 0 #e34981, -1.7em -1em 0 0 #e34981, -1em -1.7em 0 0 #e34981;
+    }
 }

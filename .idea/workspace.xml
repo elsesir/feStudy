@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="221d7d13-2012-4836-9e56-2abfcf4f197b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/animation/animation2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/animation/animation2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/animation/animation2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/animation/animation2.html" afterDir="false" />
     </list>
     <ignored path="study.iws" />
@@ -25,20 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="html_data.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/html_study/html_data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="animation2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/animation/animation2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="300">
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -46,31 +38,23 @@
       <file leaf-file-name="animation2.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/animation/animation2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
+            <state relative-caret-position="342">
+              <caret line="380" column="54" selection-start-line="380" selection-start-column="54" selection-end-line="380" selection-end-column="54" />
               <folding>
-                <element signature="e#100#195#0" />
-                <element signature="e#782#810#0" />
-                <element signature="e#2380#2960#0" />
+                <element signature="e#559#832#0" />
+                <element signature="e#960#1193#0" />
+                <element signature="e#1210#1382#0" />
+                <element signature="e#1516#1759#0" />
+                <element signature="e#1769#1910#0" />
+                <element signature="e#1928#2084#0" />
+                <element signature="e#2101#2257#0" />
+                <element signature="e#2268#2404#0" />
+                <element signature="e#2405#2990#0" />
+                <element signature="e#3002#3138#0" />
+                <element signature="e#3139#6005#0" />
+                <element signature="e#6016#6034#0" />
+                <element signature="e#6152#6784#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jqUerystudy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/jqUerystudy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animation1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/animation/animation1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4056">
-              <caret line="169" column="6" lean-forward="true" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -162,7 +146,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1845" />
     <option name="height" value="930" />
   </component>
@@ -174,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,24 +169,17 @@
             <path>
               <item name="feStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="feStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="animation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="feStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feStudy" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,19 +313,20 @@
       <workItem from="1529371823812" duration="12149000" />
       <workItem from="1529458575976" duration="2581000" />
       <workItem from="1529565130162" duration="4798000" />
-      <workItem from="1529890642826" duration="12416000" />
+      <workItem from="1529890642826" duration="12911000" />
+      <workItem from="1529978823580" duration="15628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128250000" />
+    <option name="totallyTimeSpent" value="144373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1230" height="620" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" sideWeight="0.5188679" side_tool="true" weight="0.2567783" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4811321" visible="true" weight="0.27058825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4811321" visible="true" weight="0.2565737" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -646,24 +625,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/html_study.html" />
-    <entry file="file://$PROJECT_DIR$/html/animation/animation1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4056">
-          <caret line="169" column="6" lean-forward="true" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/html_study/html_template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/html_study/html_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -677,25 +642,49 @@
     <entry file="file://$PROJECT_DIR$/html/jqUerystudy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" column="13" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/animation/animation1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="169" column="6" lean-forward="true" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/html_study/html_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/animation/animation2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="300">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/animation/animation2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
+        <state relative-caret-position="342">
+          <caret line="380" column="54" selection-start-line="380" selection-start-column="54" selection-end-line="380" selection-end-column="54" />
           <folding>
-            <element signature="e#100#195#0" />
-            <element signature="e#782#810#0" />
-            <element signature="e#2380#2960#0" />
+            <element signature="e#559#832#0" />
+            <element signature="e#960#1193#0" />
+            <element signature="e#1210#1382#0" />
+            <element signature="e#1516#1759#0" />
+            <element signature="e#1769#1910#0" />
+            <element signature="e#1928#2084#0" />
+            <element signature="e#2101#2257#0" />
+            <element signature="e#2268#2404#0" />
+            <element signature="e#2405#2990#0" />
+            <element signature="e#3002#3138#0" />
+            <element signature="e#3139#6005#0" />
+            <element signature="e#6016#6034#0" />
+            <element signature="e#6152#6784#0" />
           </folding>
         </state>
       </provider>
