@@ -384,3 +384,47 @@
         -2em 0 0 0 #e34981, -1.7em -1em 0 0 #e34981, -1em -1.7em 0 0 #e34981;
     }
 }
+.part.loading9 {
+    background: #1b1e24;
+}
+
+.page-content {
+    background: #1b1e24;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details  {
+    position:absolute;
+    z-index: 1;
+    width: 110px;
+    height: 110px;
+    background: url('../../img/interesting/border-img.png') no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loading9 1s infinite;
+}
+.base {
+    width:100px;
+    height:100px;
+    overflow:hidden;
+}
+.base > img {
+    width:100px;
+    height:100px;
+}
+@keyframes loading9 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
