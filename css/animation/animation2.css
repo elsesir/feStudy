@@ -1,11 +1,23 @@
+.loading-ul {
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: #263238;
+}
 .part {
     position: relative;
-    height: 100px;
+    height: 360px;
+    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+    margin: 10px;
+    background: #eeeeee;
     overflow: hidden;
+    border: 1px solid #c0c0c0;
 }
 .part:nth-of-type(2n) {
     background: #4ea980;

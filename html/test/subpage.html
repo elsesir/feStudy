@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于万科会</title>
+    <link href="bootstrap.css" type="text/css" rel="stylesheet" >
+    <link href="css.css" type="text/css" rel="stylesheet" >
+    <link href="../../css/animate.css" type="text/css" rel="stylesheet" >
+
+    <link href="css-2.css" type="text/css" rel="stylesheet" >
+    <link href="vankeclub.css" type="text/css" rel="stylesheet" >
+    <link href="header.css" type="text/css" rel="stylesheet">
+
+    <style type="text/css">
+        .subpage-top-pic {
+            background: url("./images/subpage-banner.jpg") no-repeat center center;
+            height: 238px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="">
+        <div class="container menu-height navbar-fixed-top-mobile">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="z-index:5;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand page-scroll"><a href="index.php"><img src="images/logo.png" class="band animated flipInX" alt=""></a></span>
+
+                <!-- <div class="navbar-toggle social-menu" >
+                  <ul class="nav navbar-nav-2 navbar-right version-margin navbar-center animated fadeInDown">
+                                                                                     <li ><a href="https://www.facebook.com/vankeclub/" style="background-color: transparent;" target="_blank" class="icon-padding " target="_blank"><div class="facebook-hover social-slide"></div></a></li>
+                                                               <li >
+                      <a href="#" data-toggle="modal" data-target="#myModalWeChat">
+                        <div class="wechat-hover social-slide"></div>
+                      </a>
+                    </li>
+                                                            </ul>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse " id="myNavbar">
+            <div class="container m-padding-0 animated bounceInDown">
+                <div align="center" style="width:100%;">
+                    <ul class="nav navbar-nav-2 navbar-right version-margin navbar-center ">
+                        <li>
+                            <div class="search">
+                                <div class="input-group">
+                                    <input type="text" id="search_query" name="search_query" class="form-control2" placeholder="搜尋" onkeydown="enter_search()">
+                                    <span class="input-group-btn">
+                                        <button class="btn2 btn-secondary" type="button" onclick="search();"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="version"><a class="version-active" href="subpage.php?lang=hk&amp;mid=62">繁</a></li>
+                        <li class="version"><a class="" href="subpage.php?lang=cn&amp;mid=62">簡</a></li>
+                        <li class="version version-eng"><a class="" href="subpage.php?lang=en&amp;mid=62">ENG</a></li>
+                        <li class="version"><a href="member-login.php" title="會員登入"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a></li>
+                        <li class="version">
+                            <a href="#" title="訂閱我們的通訊" data-toggle="modal" data-target="#NewsLetterModal"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="version"><a href="index.php" title="返回首頁"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                        <li class="version"><a href="https://www.facebook.com/vankeclub/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                        <li class="version">
+                            <a href="#" data-toggle="modal" data-target="#myModalWeChat"><i class="fa fa-wechat fa-lg" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="width:100%; display:block; " class="">
+                <div class="container m-margin-0 animated fadeIn">
+                    <div align="center" style="width: 100%;">
+                        <ul id="main-menu" class="nav navbar-nav navbar-right navbar-center-menu" data-smartmenus-id="15308458456950874">
+                            <li class="active">
+                                <a href="subpage.php?mid=26" title="關於萬客會" class="menu_btn">
+                                    關於萬客會          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="subpage.php?mid=27" title="會員優惠" class="menu_btn">
+                                    會員優惠          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="subpage.php?mid=28" title="會員活動" class="menu_btn">
+                                    會員活動          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="subpage.php?mid=29" title="活動花絮" class="menu_btn">
+                                    活動花絮          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="subpage.php?mid=55" title="地產項目" class="menu_btn">
+                                    地產項目          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="subpage.php?mid=54" title="優越會籍" class="menu_btn">
+                                    優越會籍          </a>
+                            </li>
+                            <li class=" ">
+                                <a href="contact.php" title="聯絡我們" class="menu_btn header_lvl1_last">
+                                    聯絡我們          </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div class="wrapper">
+    <div class="subpage-container">
+        <div class="subpage-top-pic animated fadeIn"></div>
+        <div class="subpage-nav-wrapper animated bounceInLeft">
+        </div>
+        <div class="raw t-w subpage-nav-container">
+            <div class="col-sm-2 text-left none-xs">
+                <div class="vcenter-2">
+                    <h2 style=" font-weight:300; margin-bottom: 60px;">—</h2>
+                </div></div>
+            <div class="col-sm-8">
+                <div class="vcenter-2">
+                    <div>
+                        <h2 class="animated fadeInRightBig" data-animation="fadeInRightBig">  	  	會員優惠  	  	</h2> <ul class="breadcrumb t-w text-center"><li class=""><a href="index.php" class="">主頁</a></li> <li class="">&nbsp;<a href="subpage.php?mid=27">會員優惠</a></li></ul></div>
+                </div>
+            </div>
+            <div class="col-sm-2 text-right none-xs">
+                <div class="vcenter-2">
+                    <h2 style=" font-weight:300; margin-bottom: 60px;">—</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="raw subpage-top-banner-wrapper subpage-background-logo" style="    background-position: 86% 244px;"> <!-- bg-w -->
+            <div class="subpage-content-top "></div>
+            <div class="subpage-template-wrapper">
+                <div class="subpage-title">
+                    <h2 class=" t-blue-l" style="line-height: 18px; margin-bottom: -10px; "></h2>
+                </div>
+                <div style="height:200px; margin-left:50px;"><b style="font-size:28px;">即將呈現</b></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

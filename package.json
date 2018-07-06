@@ -4,7 +4,8 @@
   "description": "study of JS ",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {},
   "scripts": {

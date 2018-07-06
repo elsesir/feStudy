@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>万客会</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration:none;
+            color: #fff;
+        }
+        li {
+            list-style-type: none;
+        }
+
+        .vc-header {
+            position: relative;
+            background: url("../../img/test/top-bg-full.jpg") no-repeat center center;
+            background-size: 30%;
+            height: 100px;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+            /*box-shadow: 0px 5px 10px rgba(0,0,0,0.3);*/
+        }
+        .header-logo {
+            transition: width 1s;
+            animation: flipInX 1s;
+        }
+        @keyframes flipInX {
+            from {
+                -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+                transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 0;
+            }
+
+            40% {
+                -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+                transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            60% {
+                -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+                transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+                opacity: 1;
+            }
+
+            80% {
+                -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+                transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            }
+
+            to {
+                -webkit-transform: perspective(400px);
+                transform: perspective(400px);
+            }
+        }
+        .header-type {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            animation: topdown 800ms ease 1;
+        }
+        @keyframes topdown {
+            from {
+                top: -100px;
+            }
+            60% {
+                top: 110px;
+            }
+            70% {
+                top: 90px;
+            }
+            80% {
+                top: 105px;
+            }
+            to {
+                top: 100px;
+            }
+        }
+        .header-type li {
+            display: inline-block;
+            float: left;
+        }
+        .header-type li a{
+            display: block;
+            width:45px;
+            height:32px;
+            background-color: #000;
+            color:#fff;
+            text-align: center;
+            line-height: 32px;
+            border-left: 2px solid #fff;
+        }
+        .header-type li a:hover {
+            color: #ca191d;
+            background-color: #fff;
+        }
+        .a-active {
+            color: #fff!important;
+            background-color: #ca191d!important;
+        }
+
+    </style>
+</head>
+<body>
+<header class="vc-header">
+    <span>
+        <a href="index.html">
+            <img src="../../img/test/logo.png" class="header-logo" title="vankeclub.万客会">
+        </a>
+    </span>
+    <ul class="header-type">
+        <li>
+            <a href="?lang=hk">繁</a>
+        </li>
+        <li>
+            <a href="?lang=cn" class="a-active">简</a>
+        </li>
+        <li>
+            <a href="?lang=en">ENG</a>
+        </li>
+    </ul>
+</header>
+
+</body>
+</html>
