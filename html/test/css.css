@@ -2643,7 +2643,7 @@ input.error, select.error, .error {
 }
 @font-face {
     font-family: 'Lato Regular'; /*a name to be used later*/
-    src: url('../fonts/Lato-Regular.ttf'); /*URL to font*/
+    src: url('./fonts/Lato-Regular.ttf'); /*URL to font*/
 }
 .nav-tabs {
     margin-top: 15px !important;
