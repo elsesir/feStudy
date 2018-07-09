@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+    <link href="../css/animate.css" type="text/css" rel="stylesheet">
+    <link href="../css/header.css" type="text/css" rel="stylesheet">
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" class="navbar-header-logo band animated flipInX" alt="">
+            </a>
+            <div class="container animated bounceInDown">
+                <div align="center" style="width:100%;">
+                    <ul class="nav navbar-right version-margin navbar-center ">
+                        <li>
+                            <div class="search">
+                                <div class="input-group">
+                                    <input type="text" id="search_query" name="search_query" class="form-control2" placeholder="搜尋" onkeydown="enter_search()">
+                                    <span class="input-group-btn">
+                                        <button class="btn2 btn-secondary" type="button" onclick="search();"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="version"><a class="version-active" href="index.php?lang=hk&amp;mid=1">繁</a></li>
+                        <li class="version"><a class="" href="index.php?lang=cn&amp;mid=1">簡</a></li>
+                        <li class="version version-eng"><a class="" href="index.php?lang=en&amp;mid=1">ENG</a></li>
+
+                        <!-- LOGGED IN -->
+
+                        <li class="version"><a href="member-login.php" title="會員登入"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a></li>
+
+                        <li class="version">
+                            <a href="#" title="訂閱我們的通訊" data-toggle="modal" data-target="#NewsLetterModal"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li class="version"><a href="index.php" title="返回首頁"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+
+                        <li class="version"><a href="https://www.facebook.com/vankeclub/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                        <li class="version">
+                            <a href="#" data-toggle="modal" data-target="#myModalWeChat"><i class="fa fa-wechat fa-lg" aria-hidden="true"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="container animated fadeIn">
+                <div align="center" style="width: 100%;">
+                    <ul id="main-menu" class="nav navbar-nav navbar-right navbar-center-menu" data-smartmenus-id="15311296310059583">
+                        <li class=" ">
+                            <a href="subpage.php?mid=26" title="關於萬客會" class="menu_btn">
+                                關於萬客會          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="subpage.php?mid=27" title="會員優惠" class="menu_btn">
+                                會員優惠          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="subpage.php?mid=28" title="會員活動" class="menu_btn">
+                                會員活動          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="subpage.php?mid=29" title="活動花絮" class="menu_btn">
+                                活動花絮          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="subpage.php?mid=55" title="地產項目" class="menu_btn">
+                                地產項目          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="subpage.php?mid=54" title="優越會籍" class="menu_btn">
+                                優越會籍          </a>
+                        </li>
+                        <li class=" ">
+                            <a href="contact.php" title="聯絡我們" class="menu_btn header_lvl1_last">
+                                聯絡我們          </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <!--<li><a href="#about">About</a></li>-->
+                <!--<li><a href="#contact">Contact</a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li class="dropdown-header">Nav header</li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="../navbar/">Default</a></li>-->
+                <!--<li><a href="../navbar-static-top/">Static top</a></li>-->
+                <!--<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+    </div>
+</nav>
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../../js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

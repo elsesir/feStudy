@@ -1,0 +1,9 @@
+div {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'sinkin_sans300_light', "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 13px;
+    line-height: 1.7em;
+    font-family: "Gotham A", "Gotham B", Arial, Helvetica,Meiryo,"微軟正黑體","Microsoft JhengHei",sans-serif;
+    font-weight: normal;
+}
