@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221d7d13-2012-4836-9e56-2abfcf4f197b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/css-2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/css.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/fonts/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/images/subpage-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/images/subpage-bar-bg-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/images/top-bg-full.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/subpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/vankeclub.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/header.css" afterDir="false" />
     </list>
     <ignored path="study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +62,8 @@
       <file leaf-file-name="header.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
               <folding>
                 <element signature="e#865#1473#0" />
               </folding>
@@ -418,12 +404,12 @@
       <workItem from="1530668395224" duration="4275000" />
       <workItem from="1530754467811" duration="13606000" />
       <workItem from="1530841027295" duration="8144000" />
-      <workItem from="1531100023292" duration="15614000" />
+      <workItem from="1531100023292" duration="15918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217517000" />
+    <option name="totallyTimeSpent" value="217821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -831,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+        <state relative-caret-position="312">
+          <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
           <folding>
             <element signature="e#865#1473#0" />
           </folding>

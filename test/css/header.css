@@ -148,6 +148,18 @@
         display: inline-block;
     }
 }
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 28px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
 @media (max-width: 767px) {
     .navbar-toggle {
         position: absolute;
